@@ -26,7 +26,7 @@ void aes_cbc_encrypt(const unsigned char *plaintext, int plaintext_len,
     if (!(ctx = EVP_CIPHER_CTX_new()))
         handleErrors();
 
-    if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, key, iv))
+    if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, key, NULL))
         handleErrors();
 
     if (1 != EVP_EncryptUpdate(ctx, ciphertext, &len, plaintext, plaintext_len))
@@ -56,15 +56,9 @@ int main()
         handleErrors();
 
     // Generate a random 128-bit IV
-    // unsigned char iv[IV_SIZE];
-    // if (RAND_bytes(iv, sizeof(iv)) != 1)
-    //    handleErrors();
-    // Generate a non-random 128-bit IV
     unsigned char iv[IV_SIZE];
-    unsigned char value = 0x42;
-    for (int i = 0; i < sizeof(iv); i++) {
-      iv[i] = value;
-    }
+    if (RAND_bytes(iv, sizeof(iv)) != 1)
+        handleErrors();
 
     // Plaintext to be encrypted
     unsigned char plaintext[] = "This is a plaintext message.";

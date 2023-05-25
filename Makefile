@@ -1,5 +1,5 @@
 
-ALL := md_fail md_ok md_force aescbc_ok
+ALL := md_fail md_ok aescbc_ok aescbc_nulliv
 
 all: ${ALL}
 
