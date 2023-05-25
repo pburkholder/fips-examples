@@ -3,7 +3,7 @@
 #include <openssl/evp.h>
 #include <openssl/rand.h>
 #include <openssl/err.h>
-#include <openssl/fips.h>
+// #include <openssl/fips.h>
 
 #define KEY_SIZE 32
 #define IV_SIZE 16
