@@ -9,7 +9,7 @@
 
 void handleErrors()
 {
-    fprintf(stderr, "Error occurred.\n");
+    ERR_print_errors_fp(stderr);
     exit(1);
 }
 
