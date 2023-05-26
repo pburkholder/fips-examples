@@ -1,9 +1,17 @@
+# 14 Problems with FIPS-140
 
-# Bona Fides
+---
+
+
+## Bona Fides
+
 
 ---
 
 # Opinions my own
+
+
+---
 
 * I vehemently welcome your critique
 
@@ -16,6 +24,13 @@ may have with the federal government
 
 ---
 
+---
+
+## X. FIPS doesn't prevent stupid
+
+* Demo with IVs (initialization vectors)
+
+---
 # What to do
 
 * Encryption [1] is just software

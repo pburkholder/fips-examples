@@ -20,17 +20,15 @@ Then
 ```
 sudo apt-get update
 sudo apt-get upgrade
+sudo ua enable fips
 sudo shutdown -r now
 sudo apt-get install ubuntu-advantage-tools
-sudo ua enable fips
 sudo ua status
 ```
 
 ```
-sudo apt-get install gcc
-
-
-sudo apt install -y libssl1.1 libssl-dev openssl # fips-mode-bin
+sudo apt-get install gcc make
+sudo apt install -y libssl1.1 libssl-dev openssl 
 
 https://ubuntu.com/blog/how-to-develop-linux-applications-for-fips-on-ubuntu
 ```
