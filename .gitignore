@@ -3,3 +3,4 @@ md_ok
 md_force
 aescbc_ok
 aescbc_nulliv
+chacha_ok
