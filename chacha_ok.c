@@ -5,6 +5,8 @@
 #include <openssl/rand.h>
 #include <openssl/err.h>
 
+// Author: Peter Burkholder, with assistance from ChatGPT, 2023 
+
 #define KEY_SIZE 32
 #define TAG_SIZE 16
 

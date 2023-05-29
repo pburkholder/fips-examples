@@ -3,7 +3,8 @@
 #include <openssl/evp.h>
 #include <openssl/rand.h>
 #include <openssl/err.h>
-// #include <openssl/fips.h>
+
+// Author: Peter Burkholder, with assistance from ChatGPT, 2023 
 
 #define KEY_SIZE 32
 #define IV_SIZE 16

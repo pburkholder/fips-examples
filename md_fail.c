@@ -1,6 +1,10 @@
 #include <openssl/evp.h>
 #include <openssl/err.h>
 
+
+// Orginal code from https://ubuntu.com/blog/how-to-develop-linux-applications-for-fips-on-ubuntu
+// by Nikos Mavrogiannopoulos
+
 /* Demonstrate message digest */
 
 static
