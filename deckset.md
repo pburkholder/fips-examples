@@ -8,51 +8,125 @@
 
 ---
 
-# Opinions my own
+## Opinions my own
 
 
----
-
-* I vehemently welcome your critique
-
+^I vehemently welcome your critique
 Although I work for the U.S. Government, my views
 do not represent...
-
 Further, I have no formal sway, so your opinion
 can do nothing to aid or impede any business you
 may have with the federal government
 
 ---
 
-# Here's the list
+# FIPS solves a 1990s problem 
 
-1. FIPS bugs are nearly impossible to resolve
-2. FIPS doesn't prevent stupid (3 examples)
-   1. Using a NULL IV
-   2. Rolling your own
-   3. Stepping outside the garden
-4. FIPS solves a 1990s problem (back then enc was rare, esoteric, now is ubquitious well-solved)
-5. FIPS is a ceiling, not a floor
-6. FIPS isn't in line with NIST recommendations
-7. FIPS is an impediment to adopting encryption
-8. FIPS leads to intolerable operational/security tradeoffs
-9.  FIPS timelines are glacial
-10. FIPS is incompatible with open-source software
-11. FIPS is a nightmare on GoLang
-12. FIPS is anti-competitive
-13. FIPS provides minimal protection value (FedRAMP/MITRE)
-14. FIPS doesn't prevent most SC-13-related issues
-    1.  CWEs etc.
-15. FIPS leads to surrogation bias
-    1.  Ryan said that FIPS-140 leads
-16. FIPS leads to silliness (e.g. FIPS TOTP)
+^ back then enc was rare, esoteric and was a USGov issue
+there were no reliable standards and the market hadn't produced them
+To get s
+[NIST released FIPS 140-1](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=917970) in January 1994
+SSH: 1995, SSL 2.0 (first published version), 1995
+
+# FIPS is superfluous in the 2020s
+
+^ The private sector and open source 
+have pretty much solved cryptographic algorithms. 
+
+# FIPS isn't providing you the protection you think it as
+
+^ FIPS provides minimal protection value (FedRAMP/MITRE)
+
+# FIPS doesn't protect you (much)
+
+^ FIPS is only about the algorithm
+
+# FIPS takes forever  (long timelines)
+
+# FIPS has been left behind by the world
+
+^ * E.g. ED25519 for keys, ChaCha20-Poly1305 for TLS
+^ (See Gary's Slack)
+
+# FIPS has been left behind by NIST
+
+^ Even NIST's own guidance regularly 
+recommends algorithms that haven't 
+yet made it into FIPS 
+
+
+--- 
+
+# FIPS is a lie / FIPS status can be hard to determine
+
 17. FIPS compliance status is indeterminate
     1.  Even GSA IT can't attest to the FIPS status of AD/SecureAuth
-18. FIPS is non-deterministic 
+^ Even GSA can't determine if their systems 
+are 100% FIPS-compatible
+
+# FIPS 
+
+
+
+2. FIPS doesn't prevent stupid (demo)
+3. 
+   1. Using a NULL IV - demo ready
+   2. Rolling your own - nodemo, but obvious
+   3. Stepping outside the garden - e.g. omnibus installs
+
+1. FIPS bugs are nearly impossible to track down
+   1. Status: demo on EC2 fips
+
+---
+
+4. FIPS is a ceiling, not a floor
+
+---
+
+6. FIPS is an impediment to adopting encryption 
+
+^The HTTPS-everywhere  .... held back by FIPS 
+(This is a weak argument)
+
+---
+
+1. FIPS leads to intolerable operational/security tradeoffs
+   1. Example AWS ALBs
+
+2.  FIPS timelines are glacial
+
+3.  FIPS is incompatible with open-source software
+    1.  Can't test against it
+    2.  Can't build for it
+
+
+4.  FIPS is a nightmare on GoLang
+
+
+11. FIPS is anti-competitive
+
+
+13. FIPS, even if providing value, isn't the target 
+
+14. FIPS doesn't prevent most SC-13-related issues
+    1.  CWEs etc.
+
+
+15. FIPS leads to surrogation bias
+    1.  Ryan said that FIPS-140 leads
+
+16. FIPS leads to silliness 
+    1.  (e.g. FIPS TOTP)
+
+18. FIPS is non-deterministic/mysterious
     1.  Why did ED25519 work on my FIPS box??
     2.  Why should I care?
-19. FIPS, even when providing value, isn't the target 
-20. FIPS is intolerably expensive
+
+
+19. FIPS is intolerably expensive
+
+20. FIPS isn't salvaged by OpenSSL 3.0
+
 21. FIPS biases decision making 
     1.  prioritizing prevent over detection and response
 ---
@@ -82,4 +156,7 @@ may have with the federal government
 
 
 ---
+
+
+CWE Analysis
 
