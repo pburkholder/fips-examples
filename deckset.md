@@ -53,6 +53,7 @@ have pretty much solved cryptographic algorithms.
 ^ Even NIST's own guidance regularly 
 recommends algorithms that haven't 
 yet made it into FIPS 
+^ NIST’s FIPS-140 https://csrc.nist.gov site isn’t FIPS-140 compliant (offer chacha20-poly1305)
 
 
 --- 
