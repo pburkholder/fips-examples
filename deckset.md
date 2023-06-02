@@ -93,15 +93,17 @@ are 100% FIPS-compatible
 
 1. FIPS leads to intolerable operational/security tradeoffs
    1. Example AWS ALBs
+   2. Still not GA (and details are under NDA)
 
 2.  FIPS timelines are glacial
 
 3.  FIPS is incompatible with open-source software
     1.  Can't test against it
     2.  Can't build for it
+    3.  AWS doesn't support it for OSS databases (MySQL and Psql)
 
 
-4.  FIPS is a nightmare on GoLang
+4.  FIPS is a nightmare on [GoLang](https://github.com/golang/go/issues/33281) and results in only one K8s distro for government. (see also: anti-competitive)
 
 
 11. FIPS is anti-competitive
@@ -111,6 +113,7 @@ are 100% FIPS-compatible
 
 14. FIPS doesn't prevent most SC-13-related issues
     1.  CWEs etc.
+^Although per the FedRAMP RAR, SC-28, SC-12,SC-13 are in play for transmission, and AC-17(2) (Remote Access), IA-5(1) authentication, CM-5(3) (digital signatures). See https://www.fedramp.gov/2022-01-04-updated-rar-templates/
 
 
 15. FIPS leads to surrogation bias
