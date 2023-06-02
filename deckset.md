@@ -133,6 +133,11 @@ are 100% FIPS-compatible
 
 21. FIPS biases decision making 
     1.  prioritizing prevent over detection and response
+
+
+# FIPS isn't support by major CSPs
+* Azure, AWS, Oracle Cloud
+* GCP claims to be via their use of BoringCrypto
 ---
 
 ## X. FIPS doesn't prevent stupid
