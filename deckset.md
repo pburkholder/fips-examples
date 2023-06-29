@@ -109,17 +109,19 @@ are 100% FIPS-compatible
 11. FIPS is anti-competitive
 
 
-13. FIPS, even if providing value, isn't the target 
+13. FIPS, even if providing value, isn't the target
 
-14. FIPS doesn't prevent most SC-13-related issues
+E.g Top 25 CWEs are encryption related.
+
+15. FIPS doesn't prevent most SC-13-related issues
     1.  CWEs etc.
 ^Although per the FedRAMP RAR, SC-28, SC-12,SC-13 are in play for transmission, and AC-17(2) (Remote Access), IA-5(1) authentication, CM-5(3) (digital signatures). See https://www.fedramp.gov/2022-01-04-updated-rar-templates/
 
 
-15. FIPS leads to surrogation bias
+16. FIPS leads to surrogation bias
     1.  Ryan said that FIPS-140 leads
 
-16. FIPS leads to silliness 
+17. FIPS leads to silliness 
     1.  (e.g. FIPS TOTP)
 
 18. FIPS is non-deterministic/mysterious
